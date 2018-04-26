@@ -30,6 +30,9 @@ scanf("%d", &n);
  scanf("%d%c",&choice,&ch);
  }
  while(choice==1);
+ printf("FIRST OF A AND S");
+first('A');
+first('S');
 }
 void follow(char c)
 {
@@ -51,16 +54,21 @@ void first(char c)
 {
      int k;
      if(!(isupper(c)))
-         //f[m++]=c;
+        {
+            printf("%c",c);
          addToResult(c);
+        } //f[m++]=c;
+
      for(k=0;k<n;k++)
      {
      if(a[k][0]==c)
      {
      if(a[k][2]=='$') follow(a[i][0]);
      else if(islower(a[k][2]))
-         //f[m++]=a[k][2];
-         addToResult(a[k][2]);
+        {
+                  addToResult(a[k][2]);
+            printf("%c",a[k][2]);
+        } //f[m++]=a[k][2];
      else first(a[k][2]);
      }
      }

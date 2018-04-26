@@ -64,7 +64,7 @@ class macroTry {
 					if(i==linearArray.length-1)
 						plaTable[plac] = plac + "  " + linearArray[i];
 					else
-						plaTable[plac] = plac + "  " + linearArray[i].substring(0,linearArray.length-1);
+						plaTable[plac] = plac + "  " + linearArray[i].substring(0,(linearArray[i].length())-1);
 					plaFile.write(plaTable[plac]);
 					plaFile.newLine();
 					plac++;					
