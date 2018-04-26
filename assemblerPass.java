@@ -13,12 +13,6 @@ public class assemblerPass  {
 	static String[] st = new String[30];
 	static String[] lt = new String[30];
 
-	/*static BufferedReader br = new BufferedReader(new FileReader("inputAssembler.txt"));
-	static BufferedWriter motFile = new BufferedWriter(new FileWriter("mot.txt",true));
-	static BufferedWriter potFile = new BufferedWriter(new FileWriter("pot.txt",true));
-	static BufferedWriter stFile = new BufferedWriter(new FileWriter("st.txt",true));
-	static BufferedWriter ltFile = new BufferedWriter(new FileWriter("lt.txt",true));*/
-
 	public static void main(String[] args) throws IOException{
 
 	BufferedReader br = new BufferedReader(new FileReader("inputAssembler.txt"));
